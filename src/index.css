@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SFProDisplay;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url(utils/cssFonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: SFProDisplay bold;
+  font-weight: bold;
+  src: url(utils/cssFonts/SFPRODISPLAYBOLD.OTF);
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
