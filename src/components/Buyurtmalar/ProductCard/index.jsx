@@ -192,6 +192,15 @@ export const ProductCard = ({ value }) => {
             <Payme src={payme} alt="payme" />
           </PaymeColumn>
         </Cheque>
+        <GenericWrapper done>
+              <div onClick={() => onCancel(value)}>
+                <Cancel />
+              </div>
+              <br />
+              <div onClick={() => onDone(value)}>
+                <Done />
+              </div>
+            </GenericWrapper>
       </ModalV>
     </>
   );

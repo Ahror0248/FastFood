@@ -227,9 +227,10 @@ Info.PaymeText = styled.div`
 `;
 export const GenericWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  justify-content: space-around;
+  flex-direction: ${({done})=> done ? 'row': 'column'};
+  margin-left: ${({done})=> done? '0':"auto"};
+  justify-content: ${({done})=> done? 'center':'space-around'};
+  margin-top: ${({done})=>done && '40px'};
 `;
 export const Footer = styled.div`
   display: flex;
